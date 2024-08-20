@@ -1,3 +1,4 @@
+// ToDo App
 const getul = document.getElementById('ul');
 
 function add() {
@@ -11,7 +12,7 @@ function add() {
     // add text button
     // remove li button
     const removeButton = document.createElement('button');
-    let removeButtonText =  document.createTextNode('Remove');
+    let removeButtonText =  document.createTextNode('REMOVE');
     removeButton.appendChild(removeButtonText);
     li.appendChild(removeButton)
     removeButton.setAttribute('id','removeBtn')
@@ -19,7 +20,7 @@ function add() {
     // remove li button
     //edit button
     const editButton = document.createElement('button')
-    let editButtonText = document.createTextNode('edit')
+    let editButtonText = document.createTextNode('EDIT')
     editButton.appendChild(editButtonText)
     li.appendChild(editButton)
     editButton.setAttribute('id','editbtn')
@@ -28,15 +29,22 @@ function add() {
 
 }
 
+// remove all li Function
 function removeAll() {
     getul.innerHTML = ''
 }
+// remove All li function
 
+// remove singleli function
 function removeLi(del){
     del.parentNode.remove()
 }
+// remove singleli function
 
+// edit value function
 function editValueBtn(editValue){
     let editpromt = prompt('Enter edit value',editValue.parentNode.firstChild.nodeValue)
     editValue.parentNode.firstChild.nodeValue = editpromt
 }
+// edit value function
+// ToDo App
