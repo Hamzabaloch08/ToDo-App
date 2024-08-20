@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.chatbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 40%;
+    background: linear-gradient(to bottom right, rgb(3, 255, 100), rgb(3, 255, 150), rgb(3, 255, 234));
+    color: white;
+}
+
+.list_box {
+    padding: 20px 30px;
+    overflow-y: scroll;
+}
+
+.list_box::-webkit-scrollbar {
+    width: 7px;
+    height: 100vh;
+}
+
+.list_box::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(102, 95, 95);
+}
+
+
+.list_box>ul {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    gap: 15px 0px;
+}
+
+.list_box>ul>li {
+    display: flex;
+    font-size: 1.3rem;
+    color: #000000;
+}
+
+#removeBtn {
+    margin-left: auto;
+    padding: 6px 10px;
+    background-color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+#removeBtn:active {
+    background-color: rgb(214, 0, 0);
+}
+
+#editBtn {
+    margin-left: 10px;
+    padding: 6px 10px;
+    background-color: rgb(0, 119, 255);
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+#editBtn:active {
+    background-color: rgb(0, 98, 209);
+}
+
+.inp_box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding-top: 60px;
+}
+
+.inp_box>input:first-child {
+    background-color: rgb(70, 70, 70);
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: #ffffff;
+    padding: 0px 15px;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+
+.inp_box>:nth-child(2) {
+    position: absolute;
+    right: 50;
+    bottom: 4%;
+}
+
+.inp_box>:nth-child(3) {
+    position: absolute;
+    right: 5;
+    bottom: 4%;
+}
