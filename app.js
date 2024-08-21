@@ -8,7 +8,6 @@ function add() {
     let liText = document.createTextNode(input.value);
     li.appendChild(liText);
     getul.appendChild(li);
-    input.value = ''
     // add text button
     // remove li button
     const removeButton = document.createElement('button');
@@ -26,8 +25,9 @@ function add() {
     editButton.setAttribute('id','editbtn')
     editButton.setAttribute('onclick','editValueBtn(this)')
     //edit button 
-
+    input.value = ''
 }
+
 
 // remove all li Function
 function removeAll() {
