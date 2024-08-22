@@ -27,7 +27,9 @@ body {
 }
 
 .list_box {
-    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
     overflow-y: scroll;
 }
 
@@ -51,7 +53,7 @@ body {
 
 .list_box>ul>li {
     display: flex;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #000000;
 }
 
@@ -98,11 +100,15 @@ body {
 .inp_box>:nth-child(2) {
     position: absolute;
     right: 50;
-    bottom: 4%;
+    bottom: 5;
+    width: 30px;
+    height: 35px;
 }
 
 .inp_box>:nth-child(3) {
     position: absolute;
     right: 5;
-    bottom: 4%;
+    bottom: 6;
+    width: 40px;
+    height: 40px;
 }
