@@ -1,0 +1,70 @@
+@media screen and (max-width: 768px) {    
+    .list_box {
+        padding: 20px 10px;
+        overflow-y: scroll;
+    }
+    
+    .list_box::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    .list_box::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        cursor: pointer;
+    }
+        
+    .list_box>ul>li {
+        font-size: 1rem;
+    }
+    
+    #removeBtn {
+        padding: 5px 7px;
+        background-color: rgb(255, 0, 0);
+        border: none;
+        border-radius: 50px;
+        font-size: 0.6rem;
+        cursor: pointer;
+    }
+    
+    #editBtn {
+        margin-left: 10px;
+        padding: 6px 10px;
+        background-color: rgb(0, 119, 255);
+        border: none;
+        border-radius: 50px;
+        color: #ffffff;
+        font-size: 0.9rem;
+    }
+    
+    .inp_box {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        padding-top: 60px;
+    }
+    
+    .inp_box>input:first-child {
+        background-color: rgb(70, 70, 70);
+        width: 100%;
+        height: 50px;
+        border: none;
+        color: #ffffff;
+        padding: 0px 15px;
+        font-size: 1.2rem;
+        outline: none;
+    }
+    
+    
+    .inp_box>:nth-child(2) {
+        position: absolute;
+        right: 50;
+        bottom: 4%;
+    }
+    
+    .inp_box>:nth-child(3) {
+        position: absolute;
+        right: 5;
+        bottom: 4%;
+    }
+}
