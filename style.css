@@ -33,7 +33,6 @@ body {
 
 .list_box::-webkit-scrollbar {
     width: 7px;
-    height: 100vh;
 }
 
 .list_box::-webkit-scrollbar-thumb {
